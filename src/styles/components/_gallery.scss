@@ -1,0 +1,10 @@
+.gallery {
+    width: 1240px;
+    background-color: $quaternaryColor;
+    margin: auto;
+    border-radius: 25px;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}

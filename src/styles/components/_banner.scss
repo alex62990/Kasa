@@ -1,0 +1,26 @@
+.banner {
+    width: 1240px;
+    height: 223px;
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+
+    &__img {
+        position: absolute;
+        object-fit: cover;
+        border-radius: 25px;
+        height: 100%;
+        width: 100%;
+        filter: brightness(70%);
+    }
+
+    &__text {
+        position: absolute;
+        font-size: 48px;
+        font-weight: 500;
+        color: $primaryColor;
+    }
+}

@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  max-width: 1440px;
+  margin: auto;
+}
+
+$primaryColor : #fff;
+$secondaryColor: rgba(255, 96, 96, 1);
+$tertiaryColor: rgba(0, 0, 0, 1);
+$quaternaryColor: rgba(246, 246, 246, 1);
