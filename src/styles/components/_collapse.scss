@@ -1,0 +1,52 @@
+.collapse {
+    display: flex;
+    width: 1023px;
+    margin: auto;
+
+    &__dropdown {
+        width: 100%;
+        padding-bottom: 50px;
+
+        &__container {
+            background-color: $quaternaryColor;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        &__title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: $secondaryColor;
+            border-radius: 5px;
+            h2 {
+                color: $primaryColor;
+                padding-left: 15px;
+            }
+
+            p {
+                color: $primaryColor;
+                padding-right: 15px;
+            }
+        }
+
+        &__content {
+            color: $secondaryColor;
+            font-size: 18px;
+            animation: progress-collapse $anim-dur;
+            p {
+                padding-left: 15px;
+                padding-bottom: 15px;
+            }
+        }
+    }
+}
+
+@keyframes progress-collapse {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(1);
+    }
+}

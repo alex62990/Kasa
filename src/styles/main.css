@@ -114,4 +114,52 @@ body {
   color: #fff;
   bottom: 10px;
   left: 20px;
+}
+
+.collapse {
+  display: flex;
+  width: 1023px;
+  margin: auto;
+}
+.collapse__dropdown {
+  width: 100%;
+  padding-bottom: 50px;
+}
+.collapse__dropdown__container {
+  background-color: rgb(246, 246, 246);
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+.collapse__dropdown__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 96, 96);
+  border-radius: 5px;
+}
+.collapse__dropdown__title h2 {
+  color: #fff;
+  padding-left: 15px;
+}
+.collapse__dropdown__title p {
+  color: #fff;
+  padding-right: 15px;
+}
+.collapse__dropdown__content {
+  color: rgb(255, 96, 96);
+  font-size: 18px;
+  animation: progress-collapse 5000ms;
+}
+.collapse__dropdown__content p {
+  padding-left: 15px;
+  padding-bottom: 15px;
+}
+
+@keyframes progress-collapse {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(1);
+  }
 }/*# sourceMappingURL=main.css.map */
