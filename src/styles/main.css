@@ -162,4 +162,25 @@ body {
   100% {
     transform: translateY(1);
   }
+}
+.errorContainer {
+  text-align: center;
+  margin-bottom: 100px;
+}
+.errorContainer__number {
+  font-size: 288px;
+  font-weight: 700;
+  color: rgb(255, 96, 96);
+  margin: 100px;
+}
+.errorContainer__text {
+  font-size: 36px;
+  font-weight: 500;
+  color: rgb(255, 96, 96);
+  margin-bottom: 100px;
+}
+.errorContainer__linkError {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(255, 96, 96);
 }/*# sourceMappingURL=main.css.map */

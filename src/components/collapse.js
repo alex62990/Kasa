@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
-import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
+import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Collapse = ({ title, content }) => {
