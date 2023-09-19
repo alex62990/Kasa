@@ -27,16 +27,27 @@
             p {
                 color: $primaryColor;
                 padding-right: 15px;
+                display: flex;
+                
             }
         }
 
         &__content {
+            display: flex;
             color: $secondaryColor;
             font-size: 18px;
             animation: progress-collapse $anim-dur;
             p {
                 padding-left: 15px;
-                padding-bottom: 15px;
+                padding-bottom: 15px; 
+
+                ul {
+                    list-style-type: none;
+                    margin: 0;
+                    margin-bottom: 5px;
+                    padding: 0;
+                    padding-left: 10px;
+                }
             }
         }
     }

@@ -1,7 +1,127 @@
 .slideshow {
     height: 415px;
+    position: relative;
+    margin-bottom: 25px;
+
+    &__arrow-left {
+        position: absolute;
+        z-index: 10;
+        left: 20px;
+        font-size: 100px;
+        top: 50px;
+        color: $primaryColor;
+    }
+
+    &__arrow-right {
+        position: absolute;
+        z-index: 10;
+        right: 20px;
+        font-size: 100px;
+        top: 50px;
+        color: $primaryColor;
+    }
+
+    &__img {
+        position: relative;
+        width: 100%;
+        height: 415px;
+        object-fit: cover;
+        border-radius: 25px;
+    }
+
+    &__number {
+        position: absolute;
+        right: 50%;
+        bottom: 20px;
+        color: $primaryColor;
+    }
+}
+
+.photo-proprio {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+
+.nom-proprio {
+    color: $secondaryColor;
+    width: 93px;
+    height: 52px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.score-etoile {
+    &__red {
+        color: $secondaryColor;
+        font-size: 25px;
+        padding-left: 15px;
+    }
+    &__grey {
+        color: $greystar;
+        font-size: 25px;
+        padding-left: 15px;
+    }
+}
+
+.tag-container {
+    
+    &__button {
+        padding: 5px 30px 5px 30px;
+        border-radius: 15px;
+        background-color: $secondaryColor;
+        color: $primaryColor;
+        margin-right: 15px;
+        font-size: 14px;
+    }
 }
 
 .logement-page {
-    height: 643px;
+    max-width: 1240px;
+    margin: auto;
+    
+    &__localProprio {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    
+    &__tagRating {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+
+    &__tag {
+        display: flex;
+    }
+
+    &__collapse {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+
+        &__description {
+            width: 45%;
+        }
+        &__equipements {
+            width: 45%;
+        }
+    }
+}
+
+.location-title {
+    font-size: 36px;
+    color: $secondaryColor;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.location-ville {
+    font-size: 18px;
+    color: $secondaryColor;
+    margin: 0;
+    margin-bottom: 10px;
 }

@@ -4,7 +4,7 @@ import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
-const Slideshow = (slides) => {
+const Slideshow = ({slides}) => {
 
     const [currentIndex, setCurrentIndex] = useState(0)
     const length = slides.length
@@ -23,11 +23,11 @@ const Slideshow = (slides) => {
 
     return (
         <div className='slideshow'>
-            <p className='arrow-left' onClick={prevSlide}>
+            <p className='slideshow__arrow-left' onClick={prevSlide}>
                 <FontAwesomeIcon icon={faChevronLeft} />
             </p>
 
-            <p className='arrow-right' onClick={nextSlide}>
+            <p className='slideshow__arrow-right' onClick={nextSlide}>
                 <FontAwesomeIcon icon={faChevronRight} />
             </p>
 

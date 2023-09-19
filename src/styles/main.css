@@ -144,8 +144,10 @@ body {
 .collapse__dropdown__title p {
   color: #fff;
   padding-right: 15px;
+  display: flex;
 }
 .collapse__dropdown__content {
+  display: flex;
   color: rgb(255, 96, 96);
   font-size: 18px;
   animation: progress-collapse 5000ms;
@@ -153,6 +155,13 @@ body {
 .collapse__dropdown__content p {
   padding-left: 15px;
   padding-bottom: 15px;
+}
+.collapse__dropdown__content p ul {
+  list-style-type: none;
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 0;
+  padding-left: 10px;
 }
 
 @keyframes progress-collapse {
@@ -183,4 +192,118 @@ body {
   font-size: 18px;
   font-weight: 500;
   color: rgb(255, 96, 96);
+}
+
+.slideshow {
+  height: 415px;
+  position: relative;
+  margin-bottom: 25px;
+}
+.slideshow__arrow-left {
+  position: absolute;
+  z-index: 10;
+  left: 20px;
+  font-size: 100px;
+  top: 50px;
+  color: #fff;
+}
+.slideshow__arrow-right {
+  position: absolute;
+  z-index: 10;
+  right: 20px;
+  font-size: 100px;
+  top: 50px;
+  color: #fff;
+}
+.slideshow__img {
+  position: relative;
+  width: 100%;
+  height: 415px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 25px;
+}
+.slideshow__number {
+  position: absolute;
+  right: 50%;
+  bottom: 20px;
+  color: #fff;
+}
+
+.photo-proprio {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+.nom-proprio {
+  color: rgb(255, 96, 96);
+  width: 93px;
+  height: 52px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.score-etoile__red {
+  color: rgb(255, 96, 96);
+  font-size: 25px;
+  padding-left: 15px;
+}
+.score-etoile__grey {
+  color: rgb(227, 227, 227);
+  font-size: 25px;
+  padding-left: 15px;
+}
+
+.tag-container__button {
+  padding: 5px 30px 5px 30px;
+  border-radius: 15px;
+  background-color: rgb(255, 96, 96);
+  color: #fff;
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+.logement-page {
+  max-width: 1240px;
+  margin: auto;
+}
+.logement-page__localProprio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.logement-page__tagRating {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.logement-page__tag {
+  display: flex;
+}
+.logement-page__collapse {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.logement-page__collapse__description {
+  width: 45%;
+}
+.logement-page__collapse__equipements {
+  width: 45%;
+}
+
+.location-title {
+  font-size: 36px;
+  color: rgb(255, 96, 96);
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.location-ville {
+  font-size: 18px;
+  color: rgb(255, 96, 96);
+  margin: 0;
+  margin-bottom: 10px;
 }/*# sourceMappingURL=main.css.map */
