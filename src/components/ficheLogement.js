@@ -7,17 +7,19 @@ import Proprio from "../components/prorio"
 import Location from "../components/location"
 import Tag from "../components/tag"
 import Rating from "../components/rating"
+import Errorpage from "../components/errorpage"
 
 
 const FicheLogement = () => {
     const { id } = useParams()
     const logement = logements.find(logement => logement.id === id)
+    if(!logement) return (<Errorpage />)
 
-    const tagsLogement = logement?.tags.map((tags, i) => {
+    const tagsLogement = logement.tags.map((tags, i) => {
         return <Tag key={i} props={tags} />
     })
 
-    const equipments = logement?.equipments.map((equipment, i) => {
+    const equipments = logement.equipments.map((equipment, i) => {
         return (
             <ul key={i}>
                 <li>{equipment}</li>

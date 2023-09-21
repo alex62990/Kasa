@@ -1,11 +1,18 @@
 .collapse {
     display: flex;
-    width: 1023px;
+    max-width: 1023px;
     margin: auto;
+
 
     &__dropdown {
         width: 100%;
         padding-bottom: 50px;
+
+        @media screen and (max-width: 1050px) {
+            padding-bottom: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
 
         &__container {
             background-color: $quaternaryColor;

@@ -1,5 +1,5 @@
 .gallery {
-    width: 1240px;
+    max-width: 1240px;
     background-color: $quaternaryColor;
     margin: auto;
     border-radius: 25px;
@@ -7,4 +7,20 @@
     padding-bottom: 50px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    width: 95%;
+
+    @media screen and (max-width: 884px) {
+        background-color: $primaryColor;
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        width: 95%;
+    }
 }
