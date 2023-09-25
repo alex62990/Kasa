@@ -17,9 +17,9 @@ const Collapse = ({ title, content }) => {
                 <h2>{title}</h2>
                 <p onClick={display}>
                     {isOpen ? (
-                        <FontAwesomeIcon icon={faChevronDown} size="2xl"/>
+                        <FontAwesomeIcon icon={faChevronDown} />
                     ) : (
-                        <FontAwesomeIcon icon={faChevronUp} size="2xl"/>
+                        <FontAwesomeIcon icon={faChevronUp} />
                     )}
                 </p>
             </div>

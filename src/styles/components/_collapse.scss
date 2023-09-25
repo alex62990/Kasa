@@ -29,6 +29,13 @@
             h2 {
                 color: $primaryColor;
                 padding-left: 15px;
+                font-size: 24px;
+                font-weight: 500;
+                padding: 15px;
+
+                @media screen and (max-width: 1023px) {
+                    font-size: 13px;
+                }
             }
 
             p {
@@ -48,12 +55,20 @@
                 padding-left: 15px;
                 padding-bottom: 15px; 
 
+                @media screen and (max-width: 1023px) {
+                    font-size: 13px;
+                }
+
                 ul {
                     list-style-type: none;
                     margin: 0;
                     margin-bottom: 5px;
                     padding: 0;
                     padding-left: 10px;
+
+                    @media screen and (max-width: 1023px) {
+                        font-size: 13px;
+                    }
                 }
             }
         }

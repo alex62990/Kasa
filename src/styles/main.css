@@ -116,6 +116,10 @@ body {
   }
 }
 
+.NavLink:visited {
+  text-decoration: underline;
+}
+
 .footer {
   height: 209px;
   background-color: rgb(0, 0, 0);
@@ -257,6 +261,14 @@ body {
 .collapse__dropdown__title h2 {
   color: #fff;
   padding-left: 15px;
+  font-size: 24px;
+  font-weight: 500;
+  padding: 15px;
+}
+@media screen and (max-width: 1023px) {
+  .collapse__dropdown__title h2 {
+    font-size: 13px;
+  }
 }
 .collapse__dropdown__title p {
   color: #fff;
@@ -273,12 +285,22 @@ body {
   padding-left: 15px;
   padding-bottom: 15px;
 }
+@media screen and (max-width: 1023px) {
+  .collapse__dropdown__content p {
+    font-size: 13px;
+  }
+}
 .collapse__dropdown__content p ul {
   list-style-type: none;
   margin: 0;
   margin-bottom: 5px;
   padding: 0;
   padding-left: 10px;
+}
+@media screen and (max-width: 1023px) {
+  .collapse__dropdown__content p ul {
+    font-size: 13px;
+  }
 }
 
 @keyframes progress-collapse {
@@ -318,6 +340,7 @@ body {
 @media screen and (max-width: 768px) {
   .errorContainer__text {
     font-size: 18px;
+    margin: 20px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -345,22 +368,38 @@ body {
   height: 415px;
   position: relative;
   margin-bottom: 25px;
+  margin: 15px;
+}
+@media screen and (max-width: 1023px) {
+  .slideshow {
+    height: 255px;
+  }
 }
 .slideshow__arrow-left {
   position: absolute;
   z-index: 10;
   left: 20px;
   font-size: 100px;
-  top: 50px;
+  top: 40%;
   color: #fff;
+}
+@media screen and (max-width: 1023px) {
+  .slideshow__arrow-left {
+    font-size: 50px;
+  }
 }
 .slideshow__arrow-right {
   position: absolute;
   z-index: 10;
   right: 20px;
   font-size: 100px;
-  top: 50px;
+  top: 40%;
   color: #fff;
+}
+@media screen and (max-width: 1023px) {
+  .slideshow__arrow-right {
+    font-size: 50px;
+  }
 }
 .slideshow__img {
   position: relative;
@@ -369,6 +408,11 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 25px;
+}
+@media screen and (max-width: 1023px) {
+  .slideshow__img {
+    height: 255px;
+  }
 }
 .slideshow__number {
   position: absolute;
@@ -382,6 +426,12 @@ body {
   height: 64px;
   border-radius: 50%;
 }
+@media screen and (max-width: 1023px) {
+  .photo-proprio {
+    width: 32px;
+    height: 32px;
+  }
+}
 
 .nom-proprio {
   color: rgb(255, 96, 96);
@@ -390,18 +440,36 @@ body {
   font-size: 18px;
   font-weight: 500;
 }
+@media screen and (max-width: 1023px) {
+  .nom-proprio {
+    font-size: 12px;
+  }
+}
 
 .score-etoile__red {
   color: rgb(255, 96, 96);
   font-size: 25px;
   padding-left: 15px;
 }
+@media screen and (max-width: 1023px) {
+  .score-etoile__red {
+    font-size: 12px;
+  }
+}
 .score-etoile__grey {
   color: rgb(227, 227, 227);
   font-size: 25px;
   padding-left: 15px;
 }
+@media screen and (max-width: 1023px) {
+  .score-etoile__grey {
+    font-size: 12px;
+  }
+}
 
+.tag-container {
+  margin-top: 15px;
+}
 .tag-container__button {
   padding: 5px 30px 5px 30px;
   border-radius: 15px;
@@ -410,35 +478,71 @@ body {
   margin-right: 15px;
   font-size: 14px;
 }
+@media screen and (max-width: 1023px) {
+  .tag-container__button {
+    font-size: 10px;
+  }
+}
 
 .logement-page {
   max-width: 1240px;
   margin: auto;
 }
-.logement-page__localProprio {
+.logement-page__misenplace {
+  margin: 15px;
   display: flex;
   justify-content: space-between;
+}
+@media screen and (max-width: 1023px) {
+  .logement-page__misenplace {
+    display: block;
+  }
+}
+.logement-page__localProprio {
   align-items: center;
   margin-bottom: 10px;
 }
 .logement-page__tagRating {
-  display: flex;
-  justify-content: space-between;
   margin-bottom: 40px;
+  align-items: center;
+}
+@media screen and (max-width: 1023px) {
+  .logement-page__tagRating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
 }
 .logement-page__tag {
   display: flex;
+  flex-wrap: wrap;
 }
 .logement-page__collapse {
+  margin: 15px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
 }
+@media screen and (max-width: 1023px) {
+  .logement-page__collapse {
+    display: block;
+  }
+}
 .logement-page__collapse__description {
   width: 45%;
 }
+@media screen and (max-width: 1023px) {
+  .logement-page__collapse__description {
+    width: 100%;
+  }
+}
 .logement-page__collapse__equipements {
   width: 45%;
+}
+@media screen and (max-width: 1023px) {
+  .logement-page__collapse__equipements {
+    width: 100%;
+  }
 }
 
 .location-title {
@@ -447,10 +551,20 @@ body {
   margin: 0;
   margin-bottom: 10px;
 }
+@media screen and (max-width: 1023px) {
+  .location-title {
+    font-size: 18px;
+  }
+}
 
 .location-ville {
   font-size: 18px;
   color: rgb(255, 96, 96);
   margin: 0;
   margin-bottom: 10px;
+}
+@media screen and (max-width: 1023px) {
+  .location-ville {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=main.css.map */

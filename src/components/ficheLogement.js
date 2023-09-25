@@ -13,7 +13,7 @@ import Errorpage from "../components/errorpage"
 const FicheLogement = () => {
     const { id } = useParams()
     const logement = logements.find(logement => logement.id === id)
-    if(!logement) return (<Errorpage />)
+    if (!logement) return (<Errorpage />)
 
     const tagsLogement = logement.tags.map((tags, i) => {
         return <Tag key={i} props={tags} />
@@ -33,20 +33,22 @@ const FicheLogement = () => {
             <div className="logement-page__carousel">
                 <Slideshow slides={logement?.pictures} />
             </div>
-            <div className="logement-page__localProprio">
-                <div className="logement-page__localisation">
-                    <Location title={logement?.title} location={logement?.location} />
+            <div className="logement-page__misenplace">    
+                <div className="logement-page__localProprio">
+                    <div className="logement-page__localisation">
+                        <Location title={logement?.title} location={logement?.location} />
+                    </div>
+                    <div className="logement-page__tag">
+                        {tagsLogement}
+                    </div>
                 </div>
-                <div className="logement-page__proprietaire">
-                    <Proprio name={logement?.host.name} picture={logement?.host.picture} />
-                </div>
-            </div>
-            <div className="logement-page__tagRating">
-                <div className="logement-page__tag">
-                    {tagsLogement}
-                </div>
-                <div className="logement-page__rating">
-                    <Rating score={logement?.rating} />
+                <div className="logement-page__tagRating">
+                    <div className="logement-page__proprietaire">
+                        <Proprio name={logement?.host.name} picture={logement?.host.picture} />
+                    </div>
+                    <div className="logement-page__rating">
+                        <Rating score={logement?.rating} />
+                    </div>
                 </div>
             </div>
             <div className="logement-page__collapse">
