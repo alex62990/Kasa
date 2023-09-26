@@ -284,6 +284,7 @@ body {
 .collapse__dropdown__content p {
   padding-left: 15px;
   padding-bottom: 15px;
+  padding-top: 15px;
 }
 @media screen and (max-width: 1023px) {
   .collapse__dropdown__content p {
@@ -439,6 +440,7 @@ body {
   height: 52px;
   font-size: 18px;
   font-weight: 500;
+  padding-top: 15px;
 }
 @media screen and (max-width: 1023px) {
   .nom-proprio {
@@ -516,6 +518,13 @@ body {
 .logement-page__tag {
   display: flex;
   flex-wrap: wrap;
+}
+.logement-page__rating {
+  padding-top: 15px;
+}
+.logement-page__proprietaire {
+  display: flex;
+  justify-content: flex-end;
 }
 .logement-page__collapse {
   margin: 15px;

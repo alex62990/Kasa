@@ -42,7 +42,6 @@
                 color: $primaryColor;
                 padding-right: 15px;
                 display: flex;
-                
             }
         }
 
@@ -53,7 +52,8 @@
             animation: progress-collapse $anim-dur;
             p {
                 padding-left: 15px;
-                padding-bottom: 15px; 
+                padding-bottom: 15px;
+                padding-top: 15px; 
 
                 @media screen and (max-width: 1023px) {
                     font-size: 13px;

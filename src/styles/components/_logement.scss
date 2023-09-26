@@ -71,6 +71,7 @@
     height: 52px;
     font-size: 18px;
     font-weight: 500;
+    padding-top: 15px;
 
     @media screen and (max-width: 1023px) {
         font-size: 12px;
@@ -154,7 +155,14 @@
         flex-wrap: wrap;
     }
 
-   
+    &__rating {
+        padding-top: 15px;
+    }
+
+    &__proprietaire {
+        display: flex;
+        justify-content: flex-end;
+    }
 
     &__collapse {
         margin: 15px;
